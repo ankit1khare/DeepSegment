@@ -1,0 +1,15 @@
+python3 vis-new.py \
+--checkpoint_dir="test_model/" \
+--vis_logdir="vis_log" \
+--dataset_dir="datasets/test_dataset_40%/tfrecord" \
+--vis_split="val" \
+--model_variant="xception_65" \
+--logtostderr \
+--atrous_rates=6 \
+--atrous_rates=12 \
+--atrous_rates=18 \
+--output_stride=16 \
+--decoder_output_stride=4 \
+--vis_crop_size=513 \
+--vis_crop_size=515 \
+--max_number_of_iterations=1
